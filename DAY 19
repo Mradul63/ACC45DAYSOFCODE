@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+
+class employee
+{
+public:
+int salary;
+};
+class developer : public employee
+{
+employee e;
+public:
+void salary()
+{
+cout<<"Enter employee salary: ";
+cin>>e.salary;  
+cout<<"Employee salary: "<<e.salary;
+}
+};
+
+void main()
+{
+clrscr();
+developer obj;
+obj.salary();
+getch();
+}
